@@ -1,0 +1,20 @@
+<div class="d-flex m-20">
+  <div class="modal" *ngIf="showModal">
+    <h3>Modificación guardada con éxito</h3>
+  </div>
+  <div class="card-container" *ngFor="let dato of datos, index as i">
+    <div class="card_header">
+      <h3 (click)="openSelect(dato,i)">{{dato.tipoCuenta}}</h3>
+    </div>
+    <div *ngIf="!show[i]" class="datos-container">
+      <h5>{{dato.alias}}</h5>
+      <h5>{{dato.cuenta}}</h5>
+    </div>
+    <form *ngIf="show[i]">
+      <input type="text" placeholder="Alias de Cuenta">
+      <div class="card_footer" (click)="onShowModal(dato,i)">
+        Guardar Alias
+      </div>
+    </form>
+  </div>
+</div>
