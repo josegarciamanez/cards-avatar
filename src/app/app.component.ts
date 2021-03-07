@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
-  styleUrls: ['./app.component.scss'],
   templateUrl: './app.component.html',
 })
 export class AppComponent {
@@ -15,42 +14,42 @@ export class AppComponent {
       {
         tipoCuenta: 'Cuenta de Valores',
         alias: 'Alias de Cuenta1',
-        cuenta: 838372635461628436765,
+        cuenta: '838372635461628436765',
       },
       {
         tipoCuenta: 'Cuenta de Efectivo',
         alias: 'Alias de Cuenta2',
-        cuenta: 72613804481917491797,
+        cuenta: '72613804481917491797',
       },
       {
         tipoCuenta: 'Cuenta de Valores',
         alias: 'Alias de Cuenta3',
-        cuenta: 72613804481917491797,
+        cuenta: '72613804481917491797',
       },
       {
         tipoCuenta: 'Cuenta de Pensiones',
         alias: 'Alias de Cuenta4',
-        cuenta: 72613804481917491797,
+        cuenta: '72613804481917491797',
       },
       {
         tipoCuenta: 'Cuenta de Valores',
         alias: 'Alias de Cuenta5',
-        cuenta: 72613804481917491797,
+        cuenta: '72613804481917491797',
       },
       {
         tipoCuenta: 'Cuenta de Efectivo',
         alias: 'Alias de Cuenta6',
-        cuenta: 72613804481917491797,
+        cuenta: '72613804481917491797',
       },
       {
         tipoCuenta: 'Cuenta de Valores',
         alias: 'Alias de Cuenta7',
-        cuenta: 72613804481917491797,
+        cuenta: '72613804481917491797',
       },
       {
         tipoCuenta: 'Cuenta de Pensiones',
         alias: 'Alias de Cuenta8',
-        cuenta: 72613804481917491797,
+        cuenta: '72613804481917491797',
       },
     ];
     console.log(this.dataCard);

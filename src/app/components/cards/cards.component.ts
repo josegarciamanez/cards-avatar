@@ -3,7 +3,6 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.scss'],
 })
 export class CardsComponent {
   @Input() datos: any;
@@ -21,6 +20,7 @@ export class CardsComponent {
   }
 
   public onShowModal(dato: any, index: number) {
+    console.log(dato);
     this.show[index] = !this.show[index];
     this.showModal = true;
     setTimeout(() => {
