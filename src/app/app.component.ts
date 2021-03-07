@@ -52,7 +52,7 @@ export class AppComponent {
         cuenta: '72613804481917491797',
       },
     ];
-    console.log(this.dataCard);
+    console.table(this.dataCard);
     this.isEdit = false;
   }
 }

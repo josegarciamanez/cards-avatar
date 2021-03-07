@@ -14,7 +14,7 @@ export class CardsComponent {
   constructor() {}
 
   public openSelect(dato: any, index: number) {
-    console.log(dato);
+    console.table(dato);
     console.log('INDEX: ', index);
     this.show[index] = !this.show[index];
   }

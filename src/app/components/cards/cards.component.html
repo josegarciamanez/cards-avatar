@@ -9,10 +9,11 @@
     <h5>{{dato.alias}}</h5>
     <h5>{{dato.cuenta}}</h5>
   </div>
-  <form *ngIf="show[i]">
-    <input type="text" placeholder="Alias de Cuenta">
+  <div *ngIf="show[i]">
+    <input type="text" placeholder="dato.alias" [(ngModel)]="dato.alias"
+      name="alias" (keyup.enter)="onShowModal(dato,i)">
     <div class="card_footer" (click)="onShowModal(dato,i)">
       Guardar Alias
     </div>
-  </form>
+  </div>
 </div>
